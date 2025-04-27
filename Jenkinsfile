@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    
+
     triggers {
-        githubPush() //trigger
+        githubPush() // Очікує пуши з GitHub
     }
-    
+
     stages {
         stage('Hello world') {
             steps {
@@ -12,7 +12,6 @@ pipeline {
             }
         }
     }
-} 
-
+}
 
 
